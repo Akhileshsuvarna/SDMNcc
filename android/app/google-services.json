@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "783556160143",
+    "project_id": "sdmncc-97def",
+    "storage_bucket": "sdmncc-97def.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783556160143:android:b0e42f1734a4729a211efa",
+        "android_client_info": {
+          "package_name": "com.example.sdmncc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783556160143-v4t7u3mu80q6d4imvh2ujacjildtks34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLiVDMsrE5nt3xhsyEhJITqJ7licqiKuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783556160143-v4t7u3mu80q6d4imvh2ujacjildtks34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
