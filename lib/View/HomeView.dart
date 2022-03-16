@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:sdmncc/View/savePoster.dart';
 import '../Controllers/ThemeController.dart';
 import 'HomePage.dart';
 import 'NavigationDrawer.dart';
@@ -53,7 +55,7 @@ class HomeView extends GetView<ThemeController> {
                      size: 20.0,
                    ),
                  ),
-                 label: 'Explore',
+                 label: 'Event',
                  // backgroundColor: Color.fromRGBO(36, 54, 101, 1.0),
                ),
                BottomNavigationBarItem(
@@ -78,6 +80,10 @@ class HomeView extends GetView<ThemeController> {
       drawer: NavigationDrawer(),
       appBar: AppBar(
         title: const Text('Dashboard'),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          systemNavigationBarColor: Colors.transparent, // Navigation bar
+          statusBarColor: Colors.transparent, // Status bar
+        ),
         centerTitle: true,
       ),
       bottomNavigationBar:
@@ -87,7 +93,8 @@ class HomeView extends GetView<ThemeController> {
         children: const [
           HomePage(),
           SourcePage(),
-          SettingsPage(),
+          // SettingsPage(),
+          addPost(),
         ],
       )),
     );

@@ -71,6 +71,14 @@ class NavigationDrawer extends StatelessWidget {
                 textIconColor: Get.currentRoute == Routes.CHAT
                     ? Colors.white
                     : Colors.black,
+            ),buildDrawerItem(
+                icon: Icons.logout,
+                text: "Logout",
+                onTap: () => navigate(3),
+                tileColor: Get.currentRoute == Routes.CHAT ? Colors.blue.withOpacity(0.5) : null,
+                textIconColor: Get.currentRoute == Routes.CHAT
+                    ? Colors.white
+                    : Colors.black,
             ),
           ],
         ),
@@ -125,6 +133,9 @@ class NavigationDrawer extends StatelessWidget {
     }
     if (index == 2) {
       Get.toNamed(Routes.CHAT);
+    }
+    if (index == 3) {
+      Get.toNamed(Routes.Login);
     }
   }
 }

@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 class Themes{
 bool isDark=false;
   static ThemeData darkTheme = ThemeData(
-      accentColor: Colors.redAccent,
+      accentColor: Colors.yellowAccent,
       brightness: Brightness.dark,
       primaryColor: Colors.amber,
       buttonTheme: const ButtonThemeData(
@@ -13,7 +13,7 @@ bool isDark=false;
       ));
 
   static ThemeData lightTheme = ThemeData(
-      accentColor: Colors.teal,
+      accentColor: Colors.lightBlueAccent,
       brightness: Brightness.light,
       primaryColor: Colors.blue,
       buttonTheme: const ButtonThemeData(
